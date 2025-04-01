@@ -5,7 +5,15 @@ let connections;
 
 function preload() {
   // Load the bodyPose model
-  bodyPose = ml5.bodyPose();
+  // bodyPose = ml5.bodyPose();
+
+  // bodyPose = ml5.bodyPose("models/bodypose/model.json");
+
+  const options = {
+    modelUrl: "models/bodypose/model.json",
+    fromTFHub: false,
+  };
+  bodyPose = ml5.bodyPose(options);
 }
 
 function setup() {

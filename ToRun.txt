@@ -1,0 +1,3 @@
+
+python -m venv tfjs-env
+# On Windows use `tfjs-env\Scripts\activate`
